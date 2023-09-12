@@ -3,7 +3,9 @@ import { render, fireEvent, screen } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
 import Episode from "./../Episode";
 
-test("renders without error", () => {});
+test("renders without error", () => {
+    render(<Episode/>)
+});
 
 test("renders the summary test passed as prop", () => {});
 
