@@ -14,13 +14,12 @@ const Display = (props) => {
     fetchShow().then(data => {
       setShow(data);
       if (displayFunc) {
-        displayFunc();
+        displayFunc(data);
       }
     });
   }
 
   const handleSelect = e => {
-    console.log("hello")
     setSelectedSeason(e.target.value);
   };
 
